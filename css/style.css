@@ -1,0 +1,16 @@
+img{
+border-radius: 300px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 35%;
+height: 35%;
+}
+
+h1{
+  
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 48px; margin: 0;
+}
+body{background-color: aquamarine;}

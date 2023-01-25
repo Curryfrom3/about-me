@@ -1,0 +1,88 @@
+'use strict';
+
+let username = prompt('What is your name?');
+
+//console.log('What is your name? ' + username);
+
+alert ('Hello! ' + username + ' Before I let you on the sight lets play a 5 question game.');
+
+let DoILikeRickandMorty = prompt('Do I Like Rick and Morty? Yes or No?').toLowerCase();
+
+if (DoILikeRickandMorty === 'yes' || DoILikeRickandMorty === 'y'){
+  //console.log('You are correct! I do like Rick and Morty!');
+  alert('You are correct! I do like Rick and Morty! ');
+
+} else if (DoILikeRickandMorty === 'no' || DoILikeRickandMorty === 'n'){
+
+  //console.log('You are incorrect i do like rick and Mory!');
+  alert('You are incorrect I do like rick and Mory');
+} else {
+  //console.log('Please answer yes or no');
+  alert('Please Answer Yes or No!');
+}
+
+let DidIserveintheMilitary = prompt('Did I serve in the Military? Yes or No?').toLowerCase();
+
+if (DidIserveintheMilitary === 'yes' || DidIserveintheMilitary === 'y'){
+  //console.log('You are correct! Hooyah Navy!');
+  alert('You are correct! Hooyah Navy!');
+} else if (DidIserveintheMilitary === 'no' || DidIserveintheMilitary === 'n'){
+
+  //console.log('You are incorrect i served in the U.S Navy!');
+  alert('You are incorrect I served in the U.S Navy!');
+
+} else {
+  //console.log('Please answer yes or no');
+  alert('Please Answer Yes or No!');
+}
+
+let HaveIevercompletedafullgameofMonopoly = prompt('Have I ever completed a full game of Monopoly?').toLowerCase();
+
+if (HaveIevercompletedafullgameofMonopoly === 'yes' || HaveIevercompletedafullgameofMonopoly === 'y'){
+  //console.log('Sorry I have actually never completed a game of monopoly.');
+  alert('Sorry I have actually never completed a game of monopoly.');
+}
+else if (HaveIevercompletedafullgameofMonopoly === 'no' || HaveIevercompletedafullgameofMonopoly === 'n'){
+
+  //console.log('You are correct! I should try to finish some day.');
+  alert('You are correct! I should try to finish some day.');
+
+} else {
+  //console.log('Please answer yes or no');
+  alert('Please Answer Yes or No!');
+}
+
+let DidIgotocollege = prompt('Did I go to college? Yes or No?').toLowerCase();
+
+if (DidIgotocollege === 'yes' || DidIgotocollege === 'y'){
+
+  //console.log('You are correct! I attended college after the Navy.');
+  alert('You are correct! I attended college after the Navy.');
+}
+else if (DidIgotocollege === 'no' || DidIgotocollege === 'n'){
+
+  //console.log('You are incorrect! I did attend college.');
+  alert('You are incorrect! I did attend college.');
+} else {
+  //console.log('Please answer yes or no');
+  alert('Please Answer Yes or No!');
+}
+
+let DoIenjoycoding = prompt('Do I enjoy coding? Yes or No?').toLowerCase();
+
+if (DoIenjoycoding === 'yes' || DoIenjoycoding === 'y'){
+
+  //console.log('You better believe it! I love to code!');
+  alert('You better believe it! I love to code!');
+}
+else if (DoIenjoycoding === 'no' || DoIenjoycoding === 'n'){
+
+  console.log('Sorry thats incorrect. I actually enjoy coding.');
+  alert('Sorry thats incorrect. I actually enjoy coding.');
+} else {
+  //console.log('Please answer yes or no');
+  alert('Please Answer Yes or No!');
+}
+
+alert ('Hello! ' + username + ' Thank You for taking my Quiz.');
+

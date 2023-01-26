@@ -6,11 +6,12 @@ let username = prompt('What is your name?');
 
 alert ('Hello! ' + username + ' Before I let you on the sight lets play a 5 question game.');
 
+
 let DoILikeRickandMorty = prompt('Do I Like Rick and Morty? Yes or No?').toLowerCase();
 
 if (DoILikeRickandMorty === 'yes' || DoILikeRickandMorty === 'y'){
   //console.log('You are correct! I do like Rick and Morty!');
-  alert('You are correct! I do like Rick and Morty! ');
+  alert('You are correct! I do like Rick and Morty! ') ;
 
 } else if (DoILikeRickandMorty === 'no' || DoILikeRickandMorty === 'n'){
 
@@ -73,7 +74,7 @@ let DoIenjoycoding = prompt('Do I enjoy coding? Yes or No?').toLowerCase();
 if (DoIenjoycoding === 'yes' || DoIenjoycoding === 'y'){
 
   //console.log('You better believe it! I love to code!');
-  alert('You better believe it! I love to code!');
+  alert('You better believe it! I love to code!') ;
 }
 else if (DoIenjoycoding === 'no' || DoIenjoycoding === 'n'){
 
@@ -84,5 +85,31 @@ else if (DoIenjoycoding === 'no' || DoIenjoycoding === 'n'){
   alert('Please Answer Yes or No!');
 }
 
-alert ('Hello! ' + username + ' Thank You for taking my Quiz.');
+let numberinput = parseInt(prompt('Guess a number between 1 - 10 '));
+let x = 5; //my number
+let i = 4; //attempts remain
+while (i > 0){
+  if (numberinput === x ){
+  //console.log('You Guessed it! Hoo!, you was right');
+    alert('You Guessed it! Hoo!, you was right');
+    break;
+  }
+  else if (numberinput < x){
+  //console.log('too low try guessing higher.');
+    i--;
+    numberinput = parseInt(prompt(`too low try guessing higher. you have ${i} tries remaining`));
+  }
+  else if (numberinput > x){
+    //console.log('too high! try guessing lower.');
+    i--;
+    numberinput = parseInt(prompt(`too high! try guessing lower. you have ${i} tries remaining`));
+  }
+  else{
+    i--;
+    numberinput = parseInt(prompt(`Enter a numeric value between 1-10 please. You have ${i} tries left.`));
+  }
+  if (i === 0){
+    alert('you have exhausted all attempts. The correct answer is 5.');
+  }
+}
 

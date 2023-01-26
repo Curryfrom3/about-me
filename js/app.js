@@ -69,21 +69,24 @@ function q3() {
 }
 q3();
 
-let DidIgotocollege = prompt('Did I go to college? Yes or No?').toLowerCase();
+function q4() {
+  let DidIgotocollege = prompt('Did I go to college? Yes or No?').toLowerCase();
 
-if (DidIgotocollege === 'yes' || DidIgotocollege === 'y') {
-  score++;
-  //console.log('You are correct! I attended college after the Navy.');
-  alert('You are correct! I attended college after the Navy.');
-}
-else if (DidIgotocollege === 'no' || DidIgotocollege === 'n') {
+  if (DidIgotocollege === 'yes' || DidIgotocollege === 'y') {
+    score++;
+    //console.log('You are correct! I attended college after the Navy.');
+    alert('You are correct! I attended college after the Navy.');
+  }
+  else if (DidIgotocollege === 'no' || DidIgotocollege === 'n') {
 
-  //console.log('You are incorrect! I did attend college.');
-  alert('You are incorrect! I did attend college.');
-} else {
-  //console.log('Please answer yes or no');
-  alert('Please Answer Yes or No!');
+    //console.log('You are incorrect! I did attend college.');
+    alert('You are incorrect! I did attend college.');
+  } else {
+    //console.log('Please answer yes or no');
+    alert('Please Answer Yes or No!');
+  }
 }
+q4();
 
 let DoIenjoycoding = prompt('Do I enjoy coding? Yes or No?').toLowerCase();
 

@@ -139,21 +139,24 @@ function q6() {
 }
 q6();
 
-let possibleAnswers = ['Jacksonville', 'Seattle', 'Bremerton', 'Everett', 'Great Lakes', 'Silverdale'];
-let userAttempts = 6;
+function q7() {
+  let possibleAnswers = ['Jacksonville', 'Seattle', 'Bremerton', 'Everett', 'Great Lakes', 'Silverdale'];
+  let userAttempts = 6;
 
-alert(`What are the possible cities that I have lived in? You have ${userAttempts} attempts remaining.`);
+  alert(`What are the possible cities that I have lived in? You have ${userAttempts} attempts remaining.`);
 
-for (let i = 0; i < userAttempts; i++) {
-  let userGuess = prompt(`What are the possible cities that I have lived in? You have ${userAttempts - i} attempts remaining.`);
-  if (possibleAnswers.includes(userGuess)) {
-    score++;
-    alert(`Congratulations! You guessed it! The possible cities that I have lived in are: ${possibleAnswers.join(', ')}`);
-    break;
-  }
-  if (i === userAttempts - 1) {
-    alert(`Sorry, you have exhausted all your attempts. The possible cities that I have lived in are: ${possibleAnswers.join(', ')}`);
+  for (let i = 0; i < userAttempts; i++) {
+    let userGuess = prompt(`What are the possible cities that I have lived in? You have ${userAttempts - i} attempts remaining.`);
+    if (possibleAnswers.includes(userGuess)) {
+      score++;
+      alert(`Congratulations! You guessed it! The possible cities that I have lived in are: ${possibleAnswers.join(', ')}`);
+      break;
+    }
+    if (i === userAttempts - 1) {
+      alert(`Sorry, you have exhausted all your attempts. The possible cities that I have lived in are: ${possibleAnswers.join(', ')}`);
+    }
   }
 }
+q7();
 
 alert('Hello! ' + username + ' Your final score is: ' + score + ' out of 7');

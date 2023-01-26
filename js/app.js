@@ -30,23 +30,25 @@ function q1() {
 
 q1();
 
+function q2() {
+  let DidIserveintheMilitary = prompt('Did I serve in the Military? Yes or No?').toLowerCase();
 
-let DidIserveintheMilitary = prompt('Did I serve in the Military? Yes or No?').toLowerCase();
+  if (DidIserveintheMilitary === 'yes' || DidIserveintheMilitary === 'y') {
+    score++;
+    //console.log('You are correct! Hooyah Navy!');
+    alert('You are correct! Hooyah Navy!');
+  } else if (DidIserveintheMilitary === 'no' || DidIserveintheMilitary === 'n') {
 
-if (DidIserveintheMilitary === 'yes' || DidIserveintheMilitary === 'y') {
-  score++;
-  //console.log('You are correct! Hooyah Navy!');
-  alert('You are correct! Hooyah Navy!');
-} else if (DidIserveintheMilitary === 'no' || DidIserveintheMilitary === 'n') {
+    //console.log('You are incorrect i served in the U.S Navy!');
+    alert('You are incorrect I served in the U.S Navy!');
 
-  //console.log('You are incorrect i served in the U.S Navy!');
-  alert('You are incorrect I served in the U.S Navy!');
-
-} else {
-  //console.log('Please answer yes or no');
-  alert('Please Answer Yes or No!');
+  } else {
+    //console.log('Please answer yes or no');
+    alert('Please Answer Yes or No!');
+  }
 }
 
+q2();
 
 let HaveIevercompletedafullgameofMonopoly = prompt('Have I ever completed a full game of Monopoly?').toLowerCase();
 

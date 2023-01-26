@@ -1,10 +1,8 @@
 'use strict';
 
-function q1() {
-  let username = prompt('What is your name?');
-}
 
-q1();
+let username = prompt('What is your name?');
+
 
 //console.log('What is your name? ' + username);
 
@@ -12,23 +10,25 @@ alert('Hello! ' + username + ' Before I let you on the sight lets play a 5 quest
 
 let score = 0;
 
+function q1() {
+  let DoILikeRickandMorty = prompt('Do I Like Rick and Morty? Yes or No?').toLowerCase();
 
-let DoILikeRickandMorty = prompt('Do I Like Rick and Morty? Yes or No?').toLowerCase();
+  if (DoILikeRickandMorty === 'yes' || DoILikeRickandMorty === 'y') {
+    score++;
+    //console.log('You are correct! I do like Rick and Morty!');
+    alert('You are correct! I do like Rick and Morty! ');
 
-if (DoILikeRickandMorty === 'yes' || DoILikeRickandMorty === 'y') {
-  score++;
-  //console.log('You are correct! I do like Rick and Morty!');
-  alert('You are correct! I do like Rick and Morty! ');
+  } else if (DoILikeRickandMorty === 'no' || DoILikeRickandMorty === 'n') {
 
-} else if (DoILikeRickandMorty === 'no' || DoILikeRickandMorty === 'n') {
-
-  //console.log('You are incorrect i do like rick and Mory!');
-  alert('You are incorrect I do like rick and Mory');
-} else {
-  //console.log('Please answer yes or no');
-  alert('Please Answer Yes or No!');
+    //console.log('You are incorrect i do like rick and Mory!');
+    alert('You are incorrect I do like rick and Mory');
+  } else {
+    //console.log('Please answer yes or no');
+    alert('Please Answer Yes or No!');
+  }
 }
 
+q1();
 
 
 let DidIserveintheMilitary = prompt('Did I serve in the Military? Yes or No?').toLowerCase();

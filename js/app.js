@@ -88,21 +88,24 @@ function q4() {
 }
 q4();
 
-let DoIenjoycoding = prompt('Do I enjoy coding? Yes or No?').toLowerCase();
+function q5() {
+  let DoIenjoycoding = prompt('Do I enjoy coding? Yes or No?').toLowerCase();
 
-if (DoIenjoycoding === 'yes' || DoIenjoycoding === 'y') {
-  score++;
-  //console.log('You better believe it! I love to code!');
-  alert('You better believe it! I love to code!');
-}
-else if (DoIenjoycoding === 'no' || DoIenjoycoding === 'n') {
+  if (DoIenjoycoding === 'yes' || DoIenjoycoding === 'y') {
+    score++;
+    //console.log('You better believe it! I love to code!');
+    alert('You better believe it! I love to code!');
+  }
+  else if (DoIenjoycoding === 'no' || DoIenjoycoding === 'n') {
 
-  console.log('Sorry thats incorrect. I actually enjoy coding.');
-  alert('Sorry thats incorrect. I actually enjoy coding.');
-} else {
-  //console.log('Please answer yes or no');
-  alert('Please Answer Yes or No!');
+    console.log('Sorry thats incorrect. I actually enjoy coding.');
+    alert('Sorry thats incorrect. I actually enjoy coding.');
+  } else {
+    //console.log('Please answer yes or no');
+    alert('Please Answer Yes or No!');
+  }
 }
+q5();
 
 let numberinput = parseInt(prompt('Guess a number between 1 - 10 '));
 let x = 5; //my number

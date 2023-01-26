@@ -34,3 +34,6 @@ In terms of time, it took me 3.5 hours to complete the assignment. Before starti
 Overall, I am very satisfied with my progress on this assignment, and I am looking forward to continuing to learn and improve my coding skills in the future.
 
 
+### Lab4 Partner
+Navigator: Deon
+Driver: Thomas

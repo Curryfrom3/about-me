@@ -50,21 +50,24 @@ function q2() {
 
 q2();
 
-let HaveIevercompletedafullgameofMonopoly = prompt('Have I ever completed a full game of Monopoly?').toLowerCase();
+function q3() {
+  let HaveIevercompletedafullgameofMonopoly = prompt('Have I ever completed a full game of Monopoly?').toLowerCase();
 
-if (HaveIevercompletedafullgameofMonopoly === 'yes' || HaveIevercompletedafullgameofMonopoly === 'y') {
-  //console.log('Sorry I have actually never completed a game of monopoly.');
-  alert('Sorry I have actually never completed a game of monopoly.');
-}
-else if (HaveIevercompletedafullgameofMonopoly === 'no' || HaveIevercompletedafullgameofMonopoly === 'n') {
-  score++;
-  //console.log('You are correct! I should try to finish some day.');
-  alert('You are correct! I should try to finish some day.');
+  if (HaveIevercompletedafullgameofMonopoly === 'yes' || HaveIevercompletedafullgameofMonopoly === 'y') {
+    //console.log('Sorry I have actually never completed a game of monopoly.');
+    alert('Sorry I have actually never completed a game of monopoly.');
+  }
+  else if (HaveIevercompletedafullgameofMonopoly === 'no' || HaveIevercompletedafullgameofMonopoly === 'n') {
+    score++;
+    //console.log('You are correct! I should try to finish some day.');
+    alert('You are correct! I should try to finish some day.');
 
-} else {
-  //console.log('Please answer yes or no');
-  alert('Please Answer Yes or No!');
+  } else {
+    //console.log('Please answer yes or no');
+    alert('Please Answer Yes or No!');
+  }
 }
+q3();
 
 let DidIgotocollege = prompt('Did I go to college? Yes or No?').toLowerCase();
 

@@ -6,10 +6,12 @@ let username = prompt('What is your name?');
 
 alert ('Hello! ' + username + ' Before I let you on the sight lets play a 5 question game.');
 
+let score = 0;
 
 let DoILikeRickandMorty = prompt('Do I Like Rick and Morty? Yes or No?').toLowerCase();
 
 if (DoILikeRickandMorty === 'yes' || DoILikeRickandMorty === 'y'){
+  score++;
   //console.log('You are correct! I do like Rick and Morty!');
   alert('You are correct! I do like Rick and Morty! ') ;
 
@@ -25,6 +27,7 @@ if (DoILikeRickandMorty === 'yes' || DoILikeRickandMorty === 'y'){
 let DidIserveintheMilitary = prompt('Did I serve in the Military? Yes or No?').toLowerCase();
 
 if (DidIserveintheMilitary === 'yes' || DidIserveintheMilitary === 'y'){
+  score++;
   //console.log('You are correct! Hooyah Navy!');
   alert('You are correct! Hooyah Navy!');
 } else if (DidIserveintheMilitary === 'no' || DidIserveintheMilitary === 'n'){
@@ -44,7 +47,7 @@ if (HaveIevercompletedafullgameofMonopoly === 'yes' || HaveIevercompletedafullga
   alert('Sorry I have actually never completed a game of monopoly.');
 }
 else if (HaveIevercompletedafullgameofMonopoly === 'no' || HaveIevercompletedafullgameofMonopoly === 'n'){
-
+  score++;
   //console.log('You are correct! I should try to finish some day.');
   alert('You are correct! I should try to finish some day.');
 
@@ -56,7 +59,7 @@ else if (HaveIevercompletedafullgameofMonopoly === 'no' || HaveIevercompletedafu
 let DidIgotocollege = prompt('Did I go to college? Yes or No?').toLowerCase();
 
 if (DidIgotocollege === 'yes' || DidIgotocollege === 'y'){
-
+  score++;
   //console.log('You are correct! I attended college after the Navy.');
   alert('You are correct! I attended college after the Navy.');
 }
@@ -72,7 +75,7 @@ else if (DidIgotocollege === 'no' || DidIgotocollege === 'n'){
 let DoIenjoycoding = prompt('Do I enjoy coding? Yes or No?').toLowerCase();
 
 if (DoIenjoycoding === 'yes' || DoIenjoycoding === 'y'){
-
+  score++;
   //console.log('You better believe it! I love to code!');
   alert('You better believe it! I love to code!') ;
 }
@@ -90,7 +93,8 @@ let x = 5; //my number
 let i = 4; //attempts remain
 while (i > 0){
   if (numberinput === x ){
-  //console.log('You Guessed it! Hoo!, you was right');
+    score++;
+    //console.log('You Guessed it! Hoo!, you was right');
     alert('You Guessed it! Hoo!, you was right');
     break;
   }
@@ -113,3 +117,21 @@ while (i > 0){
   }
 }
 
+let possibleAnswers = ['Jacksonville', 'Seattle', 'Bremerton', 'Everett', 'Great Lakes', 'Silverdale'];
+let userAttempts = 6;
+
+alert(`What are the possible cities that I have lived in? You have ${userAttempts} attempts remaining.`);
+
+for (let i = 0; i < userAttempts; i++) {
+  let userGuess = prompt(`What are the possible cities that I have lived in? You have ${userAttempts - i} attempts remaining.`);
+  if (possibleAnswers.includes(userGuess)) {
+    score++;
+    alert(`Congratulations! You guessed it! The possible cities that I have lived in are: ${possibleAnswers.join(', ')}`);
+    break;
+  }
+  if (i === userAttempts - 1) {
+    alert(`Sorry, you have exhausted all your attempts. The possible cities that I have lived in are: ${possibleAnswers.join(', ')}`);
+  }
+}
+
+alert('Hello! ' + username + ' Your final score is: ' + score + ' out of 7');

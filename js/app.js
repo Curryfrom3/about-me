@@ -107,34 +107,37 @@ function q5() {
 }
 q5();
 
-let numberinput = parseInt(prompt('Guess a number between 1 - 10 '));
-let x = 5; //my number
-let i = 4; //attempts remain
-while (i > 0) {
-  if (numberinput === x) {
-    score++;
-    //console.log('You Guessed it! Hoo!, you was right');
-    alert('You Guessed it! Hoo!, you was right');
-    break;
-  }
-  else if (numberinput < x) {
-    //console.log('too low try guessing higher.');
-    i--;
-    numberinput = parseInt(prompt(`too low try guessing higher. you have ${i} tries remaining`));
-  }
-  else if (numberinput > x) {
-    //console.log('too high! try guessing lower.');
-    i--;
-    numberinput = parseInt(prompt(`too high! try guessing lower. you have ${i} tries remaining`));
-  }
-  else {
-    i--;
-    numberinput = parseInt(prompt(`Enter a numeric value between 1-10 please. You have ${i} tries left.`));
-  }
-  if (i === 0) {
-    alert('you have exhausted all attempts. The correct answer is 5.');
+function q6() {
+  let numberinput = parseInt(prompt('Guess a number between 1 - 10 '));
+  let x = 5; //my number
+  let i = 4; //attempts remain
+  while (i > 0) {
+    if (numberinput === x) {
+      score++;
+      //console.log('You Guessed it! Hoo!, you was right');
+      alert('You Guessed it! Hoo!, you was right');
+      break;
+    }
+    else if (numberinput < x) {
+      //console.log('too low try guessing higher.');
+      i--;
+      numberinput = parseInt(prompt(`too low try guessing higher. you have ${i} tries remaining`));
+    }
+    else if (numberinput > x) {
+      //console.log('too high! try guessing lower.');
+      i--;
+      numberinput = parseInt(prompt(`too high! try guessing lower. you have ${i} tries remaining`));
+    }
+    else {
+      i--;
+      numberinput = parseInt(prompt(`Enter a numeric value between 1-10 please. You have ${i} tries left.`));
+    }
+    if (i === 0) {
+      alert('you have exhausted all attempts. The correct answer is 5.');
+    }
   }
 }
+q6();
 
 let possibleAnswers = ['Jacksonville', 'Seattle', 'Bremerton', 'Everett', 'Great Lakes', 'Silverdale'];
 let userAttempts = 6;
